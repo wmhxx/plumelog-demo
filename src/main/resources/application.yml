@@ -1,0 +1,20 @@
+server:
+  port: 8281
+  servlet:
+    context-path: /
+
+logging:
+  config: classpath:logback-spring.xml
+
+plumelog:
+  appName: plumelog_demo
+  redisHost: 127.0.0.1
+  redisPort: 6379
+  redisAuth: 123456
+  es:
+    shards: 5
+    replicas: 0
+    refresh:
+      interval: 30s
+    indexType:
+      model: day
